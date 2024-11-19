@@ -1,0 +1,111 @@
+.ask-me{
+    background-color: #1bbc9b;
+    color: #FFF;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 0 !important;
+    height: auto;
+    margin-bottom: 10px !important;
+}
+
+.ask-me .box_icon.box_warp.box_no_border {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 98;
+    background-color: transparent !important;
+    color: #555;
+}
+.pd_top{
+    padding-top: 6em !important;
+}
+.ask-me .box_icon h2 {
+    color: #FFF;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.ask-me p {
+    color: #FFF;
+    font-size: 15px !important;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.button.dark_button.color, .button.color:hover {
+    background: #2f3239;
+}
+.button.medium {
+    padding: 7px 21px;
+}
+.button.dark_button.color{
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF;
+    text-decoration: none;
+}
+.ask-me .col-md-9 form {
+    background: url(https://www.examveda.com/images/chrome.png) no-repeat center bottom;
+    height: 324px;
+    width: 100%;
+    background-size: 100% 100%;
+    float: right;
+    margin-top: 40px;
+}
+.ask-me .col-md-9 p {
+    margin: 90px 20px 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.ask-me .col-md-9 p textarea {
+    background: rgba(27, 188, 155, 0.20);
+    border: none;
+    color: #2f3239;
+    font-size: 13px;
+    font-style: italic;
+    resize: none;
+    height: 214px;
+    text-indent: 38px;
+    line-height: 30px;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    vertical-align: top;
+    min-height: 60px;
+    padding-left: 5px;
+}
+
+.ask-me .col-md-9 p textarea::placeholder {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.fa-pencil{
+    color: #FFF;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #2f3239;
+    top: 5px;
+    left: 10px;
+    font-weight: 900;
+}
+
+.ask-me .publish-question {
+    color: #FFF !important;
+    background-color: #1bbc9b;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 7px 15px;
+    border: none;
+}

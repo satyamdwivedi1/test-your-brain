@@ -1,0 +1,506 @@
+<div class="main w-75 p-5">
+  <div class="col-md-12 card p-5 pt-0">
+    @for (item of groupedCategory; track item.type; let idx = $index, e = $even) {
+      <div class="page-content page-shortcode">
+        <div class="boxedtitle page-title">
+          <!-- <h2>Item #{{ idx }}: {{ item.title }}</h2>/ -->
+          <h2> {{item.type}} </h2>
+          <!-- <h2>Competitive Exam MCQ Question for Practice</h2> -->
+        </div>
+        @for (i of item.data; track i.title;) {
+          <div class="col-sm-6 cat-main-div-first" [routerLink]="'/sub-category'">
+            <a [title]="i.description">
+              <div class="cat-main-div" [ngStyle]="{'background-color': bgColor}">
+                <div class="cat-main-div-link font-size-single-line">{{ i.title }}</div>
+                <div class="cat-main-div-img">
+                  <img
+                    src="https://www.examveda.com/images/home/mcq.png"
+                    [alt]="i.description"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        }
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="REASONING MCQ Question for Practice">
+            <div class="cat-main-div hc-2">
+              <div class="cat-main-div-link font-size-single-line">REASONING</div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="REASONING MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="NON VERBAL REASONING MCQ Question for Practice">
+            <div class="cat-main-div hc-3">
+              <div class="cat-main-div-link font-size-single-line">
+                NON VERBAL REASONING
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="NON VERBAL REASONING MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="ENGLISH MCQ Question for Practice">
+            <div class="cat-main-div hc-4">
+              <div class="cat-main-div-link font-size-single-line">ENGLISH</div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="ENGLISH MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="DI(Data Interpretation) MCQ Question for Practice">
+            <div class="cat-main-div hc-5">
+              <div class="cat-main-div-link font-size-single-line">
+                DI(Data Interpretation)
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="DI(Data Interpretation) MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="GK(General Knowledge) MCQ Question for Practice">
+            <div class="cat-main-div hc-6">
+              <div class="cat-main-div-link font-size-single-line">
+                GK(General Knowledge)
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="GK(General Knowledge) MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="STATEWISE GK MCQ Question for Practice">
+            <div class="cat-main-div hc-7">
+              <div class="cat-main-div-link font-size-single-line">
+                STATEWISE GK
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="STATEWISE GK MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="HISTORY GK MCQ Question for Practice">
+            <div class="cat-main-div hc-8">
+              <div class="cat-main-div-link font-size-single-line">
+                HISTORY GK
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="HISTORY GK MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="GEOGRAPHY GK MCQ Question for Practice">
+            <div class="cat-main-div hc-9">
+              <div class="cat-main-div-link font-size-single-line">
+                GEOGRAPHY GK
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="GEOGRAPHY GK MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="PHYSICS GK MCQ Question for Practice">
+            <div class="cat-main-div hc-10">
+              <div class="cat-main-div-link font-size-single-line">
+                PHYSICS GK
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="PHYSICS GK MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="CHEMISTRY GK MCQ Question for Practice">
+            <div class="cat-main-div hc-11">
+              <div class="cat-main-div-link font-size-single-line">
+                CHEMISTRY GK
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="CHEMISTRY GK MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 cat-main-div-first">
+          <a title="BIOLOGY GK MCQ Question for Practice">
+            <div class="cat-main-div hc-12">
+              <div class="cat-main-div-link font-size-single-line">
+                BIOLOGY GK
+              </div>
+              <div class="cat-main-div-img">
+                <img
+                  src="https://www.examveda.com/images/home/mcq.png"
+                  alt="BIOLOGY GK MCQ Question for Practice"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    }
+    <!-- <div class="page-content page-shortcode">
+      <div class="boxedtitle page-title">
+        <h2>Computer Related MCQ Question For Practice</h2>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="COMPUTER FUNDAMENTAL MCQ Question for Practice">
+          <div class="cat-main-div hc-13">
+            <div class="cat-main-div-link font-size-single-line">
+              COMPUTER FUNDAMENTAL
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="COMPUTER FUNDAMENTAL MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="OPERATING SYSTEM MCQ Question for Practice">
+          <div class="cat-main-div hc-14">
+            <div class="cat-main-div-link font-size-single-line">
+              OPERATING SYSTEM
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="OPERATING SYSTEM MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="MS Word MCQ Question for Practice">
+          <div class="cat-main-div hc-15">
+            <div class="cat-main-div-link font-size-single-line">MS Word</div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="MS Word MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="MS Excel MCQ Question for Practice">
+          <div class="cat-main-div hc-16">
+            <div class="cat-main-div-link font-size-single-line">MS Excel</div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="MS Excel MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="MS PowerPoint MCQ Question for Practice">
+          <div class="cat-main-div hc-17">
+            <div class="cat-main-div-link font-size-single-line">
+              MS PowerPoint
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="MS PowerPoint MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="DATA SCIENCE MCQ Question for Practice">
+          <div class="cat-main-div hc-18">
+            <div class="cat-main-div-link font-size-single-line">
+              DATA SCIENCE
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="DATA SCIENCE MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="MACHINE LEARING MCQ Question for Practice">
+          <div class="cat-main-div hc-19">
+            <div class="cat-main-div-link font-size-single-line">
+              MACHINE LEARING
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="MACHINE LEARING MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="CLOUD COMPUTING MCQ Question for Practice">
+          <div class="cat-main-div hc-20">
+            <div class="cat-main-div-link font-size-single-line">
+              CLOUD COMPUTING
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="CLOUD COMPUTING MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="page-content page-shortcode">
+      <div class="boxedtitle page-title">
+        <h2>Engineering and GATE Exam MCQ Question For Practice</h2>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Automobile Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-21">
+            <div class="cat-main-div-link font-size-single-line">
+              Automobile Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Automobile Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="CSE MCQ Question for Practice">
+          <div class="cat-main-div hc-22">
+            <div class="cat-main-div-link font-size-single-line">CSE</div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="CSE MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="ECE MCQ Question for Practice">
+          <div class="cat-main-div hc-23">
+            <div class="cat-main-div-link font-size-single-line">ECE</div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="ECE MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Electrical Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-24">
+            <div class="cat-main-div-link font-size-single-line">
+              Electrical Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Electrical Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Mechanical Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-25">
+            <div class="cat-main-div-link font-size-single-line">
+              Mechanical Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Mechanical Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Civil Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-26">
+            <div class="cat-main-div-link font-size-single-line">
+              Civil Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Civil Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Chemical Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-27">
+            <div class="cat-main-div-link font-size-single-line">
+              Chemical Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Chemical Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Biotechnology Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-28">
+            <div class="cat-main-div-link font-size-single-line">
+              Biotechnology Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Biotechnology Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Mining Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-29">
+            <div class="cat-main-div-link font-size-single-line">
+              Mining Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Mining Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Metallurgical Engineering MCQ Question for Practice">
+          <div class="cat-main-div hc-30">
+            <div class="cat-main-div-link font-size-single-line">
+              Metallurgical Engineering
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Metallurgical Engineering MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Engineering Maths MCQ Question for Practice">
+          <div class="cat-main-div hc-31">
+            <div class="cat-main-div-link font-size-single-line">
+              Engineering Maths
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Engineering Maths MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Engineering Physics MCQ Question for Practice">
+          <div class="cat-main-div hc-32">
+            <div class="cat-main-div-link font-size-single-line">
+              Engineering Physics
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Engineering Physics MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 cat-main-div-first">
+        <a title="Engineering Chemistry MCQ Question for Practice">
+          <div class="cat-main-div hc-33">
+            <div class="cat-main-div-link font-size-single-line">
+              Engineering Chemistry
+            </div>
+            <div class="cat-main-div-img">
+              <img
+                src="https://www.examveda.com/images/home/mcq.png"
+                alt="Engineering Chemistry MCQ Question for Practice"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div> -->
+  </div>
+</div>
